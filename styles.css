@@ -1,5 +1,6 @@
 :root {
     --orange: #F5841F;
+    --lightblue: #8ECAE6;
 }
 
 html {
@@ -54,4 +55,32 @@ p {
 
 .header--flex a:active {
     text-decoration: none;
+}
+
+.navigation h2 {
+    text-align: center;
+    margin: .2em;
+    background-color: black;
+    color: var(--lightblue);
+    margin: 0;
+    padding: .5em;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-top: solid .1em black;
+}
+
+.navigation ul li {
+    width: 100%;
+    text-align: center;
+    background-color: var(--lightblue);
+    border-bottom: solid .1em black;
+    padding: .4em;
+    font-weight: bold;
 }
