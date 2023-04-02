@@ -22,14 +22,14 @@
         </div>
     </header>
     <nav class="navigation">
-        <div class="headernav">
+        <div class="headernav showMenu">
             <h2>Menu</h2>
             <div class="iconheadermenu">
-                <div class="rectangle1menu menu-zone"></div>
-                <div class="rectangle2menu menu-zone"></div>
+                <div class="rectangle1menu"></div>
+                <div class="rectangle2menu"></div>
             </div>
         </div>
-        <ul class="menunavigation menu-zone">
+        <ul class="menunavigation">
             <li>Úvod</li>
             <li>Funkce</li>
             <li>Podpora</li>
@@ -38,4 +38,28 @@
         </ul>
     </nav>
 </body>
+<script>
+    
+    const headernav = document.querySelector(".headernav");
+    const menunavigation = document.querySelectorAll(".menunavigation");
+    const rectangle1menu = document.querySelectorAll(".rectangle1menu");
+    const rectangle2menu = document.querySelectorAll(".rectangle2menu");
+
+    function toggleMenu() {
+      if (headernav.classList.contains("showMenu")) {
+        headernav.classList.remove("showMenu")
+        menunavigation.classList.add("active__menunavigation");
+        rectangle1menu.classList.add("active__rectangle1menu");
+        rectangle2menu.classList.add("active__rectangle2menu");
+        }   else {
+            headernav.classList.add("showMenu")
+            menunavigation.classList.remove("active__menunavigation");
+            rectangle1menu.classList.remove("active__rectangle1menu");
+            rectangle2menu.classList.remove("active__rectangle2menu");
+            }
+    }
+
+    headernav.addEventListener("click", toggleMenu);
+
+</script>
 </html>

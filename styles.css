@@ -127,17 +127,18 @@ p {
     font-weight: bold;
 }
 
-.navigation .headernav:hover .iconheadermenu .rectangle1menu {
+.navigation .headernav .iconheadermenu .active__rectangle1menu {
     width: 1.35em;
 }
 
-.navigation .headernav:hover .iconheadermenu .rectangle2menu {
+.navigation .headernav .iconheadermenu .active__rectangle2menu {
     width: 1.35em;
     transform: translateX(-0.4em) translateY(0.4em) rotate(-45deg);
 }
 
-.navigation .menunavigation {
+.navigation .active__menunavigation {
     position: relative;
     transform: translateY(-100%);
     z-index: -1;
+    transition: .5s;
 }
