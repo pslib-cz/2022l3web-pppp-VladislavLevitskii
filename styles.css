@@ -18,9 +18,10 @@ p {
 .header--flex {
     display: flex;
     justify-content: space-between;
-    margin: 1em;
+    padding: 1em;
     gap: .5em;
     align-items: center;
+    background-color: white;
 }
 
 .header--flex .logo__image {
@@ -133,4 +134,10 @@ p {
 .navigation .headernav:hover .iconheadermenu .rectangle2menu {
     width: 1.35em;
     transform: translateX(-0.4em) translateY(0.4em) rotate(-45deg);
+}
+
+.navigation .menunavigation {
+    position: relative;
+    transform: translateY(-100%);
+    z-index: -1;
 }
