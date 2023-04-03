@@ -58,10 +58,6 @@ p {
     text-decoration: none;
 }
 
-.navigation {
-    width: 100%;
-}
-
 .navigation .headernav h2 {
     text-align: center;
     color: var(--lightblue);
