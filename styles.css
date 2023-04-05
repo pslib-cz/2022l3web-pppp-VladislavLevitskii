@@ -92,11 +92,11 @@ p {
 }
 
 .navigation .headernav .iconheadermenu .rectangle2menu {
-    top: 0.08em;
-    left: 0.48em;
+    top: -0.35em;
+    left: 1.2em;
     position: absolute;
     transform-origin: top left;
-    transform: rotate(-45deg);
+    transform: rotate(135deg);
     width: 0.8em;
     height: 0.2em;
     background-color: var(--lightblue);
@@ -132,7 +132,6 @@ p {
 
 .navigation .headernav .iconheadermenu .active__rectangle2menu {
     width: 1.35em;
-    transform: translateX(-0.4em) translateY(0.4em) rotate(-45deg);
 }
 
 .navigation .active__menunavigation {
