@@ -17,7 +17,7 @@
             <img src="Logo5.svg" alt="Logo logoipsum" class="logo__image">
         </a>
         <a href="#" class="button--header">
-            <p>Iudicium version</p>
+            <p>Zkušební verze</p>
         </a>
         </div>
     </header>
@@ -30,15 +30,19 @@
             </div>
         </div>
         <ul class="menunavigation">
-            <li>Úvod</li>
-            <li>Funkce</li>
-            <li>Podpora</li>
-            <li>Ceník</li>
-            <li>Kontakt</li>
+            <li><a href="#">Úvod</a></li>
+            <li><a href="#">Funkce</a></li>
+            <li><a href="#">Podpora</a></li>
+            <li><a href="#">Ceník</a></li>
+            <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
-    <main>
-        NEGR
+    <main class="main">
+        <header>
+            <img src="School.jpg" alt="School">
+            <h1><span class="texthightlightcolor">Řízení školy</span> ještě nebylo jednodušší</h1>
+            <p>Představujeme Software pro <span class="texthightlight">řízení lidských zdrojů ve škole nebylo efektivnější</span>.</p>
+        </header>
     </main>
 </body>
 <script>
@@ -47,6 +51,7 @@
     const menunavigation = document.querySelector(".menunavigation");
     const rectangle1menu = document.querySelector(".rectangle1menu");
     const rectangle2menu = document.querySelector(".rectangle2menu");
+    const active__main = document.querySelector(".main")
 
     function toggleMenu() {
       if (headernav.classList.contains("showMenu")) {
@@ -54,11 +59,13 @@
         menunavigation.classList.add("active__menunavigation");
         rectangle1menu.classList.add("active__rectangle1menu");
         rectangle2menu.classList.add("active__rectangle2menu");
+        active__main.classList.add("active__main");
         }   else {
             headernav.classList.add("showMenu")
             menunavigation.classList.remove("active__menunavigation");
             rectangle1menu.classList.remove("active__rectangle1menu");
             rectangle2menu.classList.remove("active__rectangle2menu");
+            active__main.classList.remove("active__main");
             }
     }
 
