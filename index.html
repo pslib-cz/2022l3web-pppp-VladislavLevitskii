@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="The_Cat.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="The_Cat.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,6 @@
         <a href="#" class="button--header">
             <p>Zkušební verze</p>
         </a>
-        </div>
     </header>
     <nav class="navigation">
         <div class="headernav showMenu">
@@ -42,34 +41,42 @@
             <img src="School.jpg" alt="School">
             <h1><span class="texthightlightcolor">Řízení školy</span> ještě nebylo jednodušší</h1>
             <p>Představujeme Software pro <span class="texthightlight">řízení lidských zdrojů ve škole nebylo efektivnější</span>.</p>
+            <ul class="draft">
+                <li>Počítá mzdové náklady</li>
+                <li>Generuje lidi</li>
+                <li>Tvoří budoucnost</li>
+            </ul>
+            <a href="#" class="button--footer">
+                Vyzkoušejte demo
+            </a>
         </header>
     </main>
-</body>
-<script>
+    <script>
     
-    const headernav = document.querySelector(".headernav");
-    const menunavigation = document.querySelector(".menunavigation");
-    const rectangle1menu = document.querySelector(".rectangle1menu");
-    const rectangle2menu = document.querySelector(".rectangle2menu");
-    const active__main = document.querySelector(".main")
-
-    function toggleMenu() {
-      if (headernav.classList.contains("showMenu")) {
-        headernav.classList.remove("showMenu")
-        menunavigation.classList.add("active__menunavigation");
-        rectangle1menu.classList.add("active__rectangle1menu");
-        rectangle2menu.classList.add("active__rectangle2menu");
-        active__main.classList.add("active__main");
-        }   else {
-            headernav.classList.add("showMenu")
-            menunavigation.classList.remove("active__menunavigation");
-            rectangle1menu.classList.remove("active__rectangle1menu");
-            rectangle2menu.classList.remove("active__rectangle2menu");
-            active__main.classList.remove("active__main");
-            }
-    }
-
-    headernav.addEventListener("click", toggleMenu);
-
-</script>
+        const headernav = document.querySelector(".headernav");
+        const menunavigation = document.querySelector(".menunavigation");
+        const rectangle1menu = document.querySelector(".rectangle1menu");
+        const rectangle2menu = document.querySelector(".rectangle2menu");
+        const active__main = document.querySelector(".main")
+    
+        function toggleMenu() {
+          if (headernav.classList.contains("showMenu")) {
+            headernav.classList.remove("showMenu")
+            menunavigation.classList.add("active__menunavigation");
+            rectangle1menu.classList.add("active__rectangle1menu");
+            rectangle2menu.classList.add("active__rectangle2menu");
+            active__main.classList.add("active__main");
+            }   else {
+                headernav.classList.add("showMenu")
+                menunavigation.classList.remove("active__menunavigation");
+                rectangle1menu.classList.remove("active__rectangle1menu");
+                rectangle2menu.classList.remove("active__rectangle2menu");
+                active__main.classList.remove("active__main");
+                }
+        }
+    
+        headernav.addEventListener("click", toggleMenu);
+    
+    </script>
+</body>
 </html>

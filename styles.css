@@ -1,6 +1,7 @@
 :root {
     --orange: #F5841F;
     --lightblue: #8ECAE6;
+    --darkblue: #16213C;
 }
 
 html {
@@ -118,6 +119,7 @@ a:active {
     border-top: solid .1em black;
     transition: .5s;
     z-index: -1;
+    transform: translateY(-100%);
 }
 
 .navigation > ul > li {
@@ -139,17 +141,17 @@ a:active {
 }
 
 .navigation > .active__menunavigation {
-    transform: translateY(-100%);
+    transform: translateY(0%);
 }
 
 .main {
-    transform: translateY(0);
+    transform: translateY(-14.3em);
     transition: .5s;
     padding: .2em;
 }
 
 .active__main {
-    transform: translateY(-14.3em);
+    transform: translateY(0em);
 }
 
 .main > header > img {
@@ -160,10 +162,12 @@ a:active {
 
 .main > header > h1 {
     text-align: center;
+    color: var(--darkblue);
 }
 
 .main > header > p {
     text-align: center;
+    color: var(--darkblue);
 }
 
 .main > header > h1 > .texthightlightcolor{
@@ -172,4 +176,30 @@ a:active {
 
 .main > header > p > .texthightlight{
     font-weight: bold;
+}
+
+.main > header > .draft {
+    color: var(--darkblue);
+}
+
+.main > header > .draft > li {
+    list-style-image: url(Vector.svg);
+    padding: .5em 0;
+}
+
+.main > header > .button--footer {
+    background-color: var(--orange);
+    color: white;
+    border-radius: 200em;
+    font-weight: bold;
+    border: .2em var(--orange) solid;
+    padding: .5em 1em;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.main > header  {
+    background-color: white;
+    color: var(--orange);
+    text-decoration: none;
 }
