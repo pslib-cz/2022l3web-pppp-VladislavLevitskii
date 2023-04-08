@@ -183,7 +183,7 @@ a:active {
 }
 
 .main > header > .draft > li {
-    list-style-image: url(Vector.svg);
+    list-style-image: url(../Images/Vector.svg);
     padding: .5em 0;
 }
 
