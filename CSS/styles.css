@@ -1,6 +1,7 @@
 :root {
     --orange: #F5841F;
     --lightblue: #8ECAE6;
+    --lightbluetransparent: rgba(142, 202, 230, 12%);
     --darkblue: #16213C;
 }
 
@@ -147,7 +148,6 @@ a:active {
 .main {
     transform: translateY(-13.3em);
     transition: .5s;
-    padding: .2em;
 }
 
 .active__main {
@@ -157,6 +157,7 @@ a:active {
 .main > header {
     display: flex;
     flex-direction: column;
+    padding: .2em;
 }
 
 .main > header > img {
@@ -175,11 +176,11 @@ a:active {
     color: var(--darkblue);
 }
 
-.main > header > h1 > .texthightlightcolor{
+.texthightlightcolor{
     color: var(--orange);
 }
 
-.main > header > p > .texthightlight{
+.texthightlight{
     font-weight: bold;
 }
 
@@ -220,4 +221,62 @@ a:active {
 
 .main > header > .listoflogos > img {
     height: 2em;
+}
+
+.main > article {
+    background-color: var(--lightbluetransparent);
+    padding: .4em;
+}
+
+.main > article > h2 {
+    text-align: center;
+    color: var(--darkblue);
+}
+
+.main > article > .article_1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: .4em;
+    justify-content: space-between;
+}
+
+.main > article > .article_1 > figure {
+    width: 47%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.main > article > .article_1 > figure > figcaption {
+    text-align: center;
+    color: var(--darkblue);
+    font-weight: bold;
+}
+
+.main > article > .article_1 > figure > img {
+    width: 50%;
+}
+
+.main > article > .article_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+/* недоделано
+.main > article > .article_2 > div {
+    height: 8em;
+    background-color: white;
+    border-radius: 5%;
+    padding: 1em;
+}
+
+.main > article > .article_2 > div > p {
+    height: max-content;
+}
+
+.main > article > .article_2 > div > h3 {
+    text-align: center;
 }
