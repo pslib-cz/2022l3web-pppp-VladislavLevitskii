@@ -154,6 +154,11 @@ a:active {
     transform: translateY(0em);
 }
 
+.main > header {
+    display: flex;
+    flex-direction: column;
+}
+
 .main > header > img {
     box-sizing: border-box;
     width: 100%;
@@ -196,10 +201,23 @@ a:active {
     padding: .5em 1em;
     font-size: 1em;
     white-space: nowrap;
+    margin: 0 auto;
 }
 
-.main > header  {
+.main > header > .button--footer:hover {
     background-color: white;
     color: var(--orange);
     text-decoration: none;
+}
+
+.main > header > .listoflogos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+}
+
+.main > header > .listoflogos > img {
+    height: 2em;
 }
