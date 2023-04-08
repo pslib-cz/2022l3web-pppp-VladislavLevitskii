@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    margin: 0;
     height: 0;
 }
 
@@ -146,7 +145,7 @@ a:active {
 }
 
 .main {
-    transform: translateY(-14.3em);
+    transform: translateY(-13.3em);
     transition: .5s;
     padding: .2em;
 }
