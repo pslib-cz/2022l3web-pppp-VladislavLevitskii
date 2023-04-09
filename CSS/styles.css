@@ -24,6 +24,8 @@ h1, h2, h3 {
 
 .header--flex {
     display: flex;
+    position: relative;
+    z-index: 5;
     justify-content: space-between;
     padding: .5em;
     align-items: center;
@@ -36,7 +38,7 @@ h1, h2, h3 {
     width: 10em;
 }
 
-.header--flex > .button--header {
+.button {
     background-color: var(--orange);
     color: white;
     border-radius: 200em;
@@ -45,9 +47,14 @@ h1, h2, h3 {
     padding: .5em 1em;
     font-size: 1em;
     white-space: nowrap;
+    margin: 0 auto;
 }
 
-.header--flex > .button--header:hover {
+.button--header {
+    margin: 0;
+}
+
+.button:hover {
     background-color: white;
     color: var(--orange);
     text-decoration: none;
@@ -60,7 +67,6 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: inherit;
 }
 
 a:active {
@@ -77,6 +83,8 @@ a:active {
 .navigation > .headernav {
     box-sizing: border-box;
     display: flex;
+    position: relative;
+    z-index: 5;
     width: 100%;
     padding: .5em;
     background-color: black;
@@ -114,7 +122,7 @@ a:active {
     transition-duration: .5s;
 }
 
-.navigation > ul {
+.navigation > .menunavigation {
     position: relative;
     list-style-type: none;
     display: flex;
@@ -128,7 +136,7 @@ a:active {
     transform: translateY(-100%);
 }
 
-.navigation > ul > li {
+.navigation > .menunavigation > a {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
@@ -136,6 +144,10 @@ a:active {
     border-bottom: solid .1em black;
     padding: .75em;
     font-weight: bold;
+}
+
+.navigation > ul > a:visited {
+    color: inherit;
 }
 
 .navigation > .headernav > .iconheadermenu > .active__rectangle1menu {
@@ -148,6 +160,7 @@ a:active {
 
 .navigation > .active__menunavigation {
     transform: translateY(0%);
+    z-index: 0;
 }
 
 .main {
@@ -168,13 +181,8 @@ a:active {
 .main > header > img {
     box-sizing: border-box;
     width: 85%;
-    border-radius: 3em;
+    border-radius: 1em;
     margin: 0 auto;
-}
-
-.main > header > h1 {
-    text-align: center;
-    color: var(--darkblue);
 }
 
 .main > header > p {
@@ -209,12 +217,6 @@ a:active {
     font-size: 1em;
     white-space: nowrap;
     margin: 0 auto;
-}
-
-.main > header > .button--footer:hover {
-    background-color: white;
-    color: var(--orange);
-    text-decoration: none;
 }
 
 .main > header > .listoflogos {
@@ -288,7 +290,7 @@ a:active {
     text-align: center;
 }
 
-.main article .button--footer2 {
+.main > article > .button--footer2 {
     background-color: var(--orange);
     color: white;
     border-radius: 200em;
@@ -298,4 +300,25 @@ a:active {
     font-size: 1em;
     white-space: nowrap;
     margin: 0 auto;
+}
+
+.main > section {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    gap: 1em;
+}
+
+.main > section > img {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.main > section > .comments {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: .5em;
+    align-items: center;
 }
