@@ -284,6 +284,7 @@ a:active {
     padding: 1em;
     width: 85vw;
     flex-shrink: 0;
+    box-shadow: .3em .3em 1em var(--lightbluetransparent);
 }
 
 .main > article > .article_2 > div > h3 {
@@ -321,4 +322,15 @@ a:active {
     gap: 1em;
     padding: .5em;
     align-items: center;
+}
+
+.main > section > .comments > .comments__flex {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.main > section > .comments > .comments__flex > p {
+    max-height: 3.5em;
+    overflow: hidden;
 }
