@@ -3,6 +3,7 @@
     --lightblue: #8ECAE6;
     --lightbluetransparent: rgba(142, 202, 230, 12%);
     --darkblue: #16213C;
+    --grey: #F5F5F5;
 }
 
 html {
@@ -306,7 +307,7 @@ a:active {
 .main > section {
     display: flex;
     flex-direction: column;
-    padding: .5em;
+    padding: 1em;
     gap: 1em;
 }
 
@@ -332,5 +333,53 @@ a:active {
 
 .main > section > .comments > .comments__flex > p {
     max-height: 3.5em;
+    overflow: hidden;
+}
+
+.main > .news {
+    background-color: var(--grey);
+    padding: 1.5em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main > .news > h2 {
+    margin: 0;
+}
+
+.main > .news > .news__content {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    height: 8em;
+}
+
+.main > .news > .news__content > .news__content--date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main > .news > .news__content > .news__content--date > img {
+    position: absolute;
+    width: 5em;
+    left: 2.5em;
+}
+
+.main > .news > .news__content > .news__content--date > p {
+    position: relative;
+    z-index: 1;
+    top: .4em;
+    left: 1em;
+}
+
+.main > .news > .news__content > .news__content--text {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.main > .news > .news__content > .news__content--text > .textoverflow {
     overflow: hidden;
 }
