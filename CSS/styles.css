@@ -383,3 +383,8 @@ a:active {
 .main > .news > .news__content > .news__content--text > .textoverflow {
     overflow: hidden;
 }
+
+.main > .news > .news__content > .news__content--text > a {
+    width: fit-content;
+    white-space: nowrap;
+}
