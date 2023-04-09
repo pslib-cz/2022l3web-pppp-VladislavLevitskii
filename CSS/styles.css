@@ -17,6 +17,11 @@ p {
     margin: 0;
 }
 
+h1, h2, h3 {
+    text-align: center;
+    color: var(--darkblue);
+}
+
 .header--flex {
     display: flex;
     justify-content: space-between;
@@ -162,8 +167,9 @@ a:active {
 
 .main > header > img {
     box-sizing: border-box;
-    width: 100%;
+    width: 85%;
     border-radius: 3em;
+    margin: 0 auto;
 }
 
 .main > header > h1 {
@@ -226,6 +232,10 @@ a:active {
 .main > article {
     background-color: var(--lightbluetransparent);
     padding: .4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 2em;
 }
 
 .main > article > h2 {
@@ -234,15 +244,13 @@ a:active {
 }
 
 .main > article > .article_1 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
     padding: .4em;
-    justify-content: space-between;
 }
 
 .main > article > .article_1 > figure {
-    width: 47%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -262,21 +270,32 @@ a:active {
 
 .main > article > .article_2 {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-/* недоделано
-.main > article > .article_2 > div {
-    height: 8em;
-    background-color: white;
-    border-radius: 5%;
+    flex-direction: row;
+    gap: 2em;
+    overflow-x: scroll;
     padding: 1em;
 }
 
-.main > article > .article_2 > div > p {
-    height: max-content;
+.main > article > .article_2 > div {
+    background-color: white;
+    border-radius: 5%;
+    padding: 1em;
+    width: 85vw;
+    flex-shrink: 0;
 }
 
 .main > article > .article_2 > div > h3 {
     text-align: center;
+}
+
+.main article .button--footer2 {
+    background-color: var(--orange);
+    color: white;
+    border-radius: 200em;
+    font-weight: bold;
+    border: .2em var(--orange) solid;
+    padding: .5em 1em;
+    font-size: 1em;
+    white-space: nowrap;
+    margin: 0 auto;
 }
