@@ -147,7 +147,7 @@ a:active {
     font-weight: bold;
 }
 
-.navigation > ul > a:visited {
+.navigation > div > a:visited {
     color: inherit;
 }
 
@@ -444,7 +444,7 @@ a:active {
     gap: .5em;
 }
 
-.footer >.footer__footer {
+.footer > .footer__footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -452,8 +452,14 @@ a:active {
     gap: 2.5em;
 }
 
-.footer >.footer__footer a {
+.footer > .footer__footer a {
     color: var(--lightblue);
+}
+
+.footer > .footer__footer > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 324px) {
