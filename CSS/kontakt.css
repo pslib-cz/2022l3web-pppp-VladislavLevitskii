@@ -33,6 +33,11 @@
     text-align: left;
 }
 
+.main > .contentkontakt > p {
+    text-align: center;
+    margin: 1em 0;
+}
+
 .main > .contentkontakt > .subsidiary {
     display: flex;
     flex-direction: column;
