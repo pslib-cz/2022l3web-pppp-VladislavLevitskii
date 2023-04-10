@@ -1,16 +1,65 @@
+:root {
+    --orange: #F5841F;
+    --lightblue: #8ECAE6;
+    --lightbluetransparent: rgba(142, 202, 230, 12%);
+    --darkblue: #16213C;
+    --grey: #F5F5F5;
+}
+
 .main > div {
     padding: .5em;
 }
 
-.main > div > h2 {
+.main > .main__header > h2 {
     text-align: left;
 }
 
-.main > div > a {
+.main > .main__header > a > img {
+    display: block;
     margin: 0 auto;
 }
 
-.main > div > a > img {
-    display: block;
-    margin: 0 auto;
+.main > .tutotials {
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main > .tutotials > a {
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    color: var(--darkblue);
+}
+
+.main > .tutotials > a:link {
+    color: var(--darkblue);
+}
+
+.main > .tutotials > a:visited {
+    color: var(--darkblue);
+}
+
+.main > .tutotials > a:active {
+    color: var(--darkblue);
+}
+
+.main > .tutotials > a > h3 {
+    margin-top: 0;
+}
+
+.main > .functionproblem {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+
+.main > .functionproblem > h3 {
+    margin: 0;
+}
+
+.main > .functionproblem > p {
+    text-align: center;
 }
