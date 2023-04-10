@@ -86,7 +86,7 @@ a:active {
     z-index: 5;
     width: 100%;
     padding: .5em;
-    background-color: black;
+    background-color: var(--darkblue);
     justify-content: center;
     align-items: center;
     gap: .5em;
@@ -129,7 +129,7 @@ a:active {
     align-items: center;
     padding: 0;
     margin: 0;
-    border-top: solid .1em black;
+    border-top: solid .1em var(--darkblue);
     transition: .5s;
     z-index: -1;
     transform: translateY(-100%);
@@ -140,13 +140,14 @@ a:active {
     width: 100%;
     text-align: center;
     background-color: var(--lightblue);
-    border-bottom: solid .1em black;
+    border-bottom: solid .1em var(--darkblue);
     padding: .75em;
     font-weight: bold;
+    color: var(--darkblue);
 }
 
 .navigation > div > a:visited {
-    color: inherit;
+    color: var(--darkblue);
 }
 
 .navigation > .headernav > .iconheadermenu > .active__rectangle1menu {
