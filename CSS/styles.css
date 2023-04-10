@@ -165,7 +165,7 @@ a:active {
 }
 
 .main {
-    transform: translateY(-13.3em);
+    transform: translateY(-13.6em);
     transition: .5s;
 }
 
@@ -266,6 +266,8 @@ a:active {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
     padding: .4em;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .main > article > .article_1 > figure {
@@ -391,22 +393,20 @@ a:active {
     white-space: nowrap;
 }
 
-.footer {
+.main > .footer {
     background-color: var(--darkblue);
-    transform: translateY(-13.3em);
-    transition: .5s;
     font-size: 14px;
 }
 
-.footer h3 {
+.main > .footer h3 {
     color: var(--lightblue);
 }
 
-.footer p {
+.main > .footer p {
     color: var(--lightblue);
 }
 
-.footer > .gridfooter {
+.main > .footer > .gridfooter {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1em;
@@ -415,36 +415,36 @@ a:active {
     border-bottom: solid var(--lightblue) .01em;
 }
 
-.footer > .gridfooter > .block {
+.main > .footer > .gridfooter > .block {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.footer > .gridfooter > .block a {
+.main > .footer > .gridfooter > .block a {
     color: var(--lightblue);
     width: fit-content;
 }
 
-.footer > .gridfooter > .block h3 {
+.main > .footer > .gridfooter > .block h3 {
     margin: 0 0 1em 0;
 }
 
-.footer > .gridfooter > .block > a > .mainlogofooter {
+.main > .footer > .gridfooter > .block > a > .mainlogofooter {
     width: 100%;
 }
 
-.footer > .gridfooter > .block img {
+.main > .footer > .gridfooter > .block img {
     display: block;
 }
 
-.footer > .gridfooter > .block > .linefooterkontakt {
+.main > .footer > .gridfooter > .block > .linefooterkontakt {
     display: flex;
     flex-direction: row;
     gap: .5em;
 }
 
-.footer > .footer__footer {
+.main > .footer > .footer__footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -452,11 +452,11 @@ a:active {
     gap: 2.5em;
 }
 
-.footer > .footer__footer a {
+.main > .footer > .footer__footer a {
     color: var(--lightblue);
 }
 
-.footer > .footer__footer > div {
+.main > .footer > .footer__footer > div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
