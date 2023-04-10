@@ -63,7 +63,6 @@ h1, h2, h3 {
 
 a:link {
     text-decoration: none;
-    color: inherit;
 }
 
 a:visited {
@@ -72,7 +71,6 @@ a:visited {
 
 a:active {
     text-decoration: none;
-    color: inherit;
 }
 
 .navigation > .headernav h2 {
@@ -165,7 +163,7 @@ a:active {
 }
 
 .main {
-    transform: translateY(-13.6em);
+    transform: translateY(-13.7em);
     transition: .5s;
 }
 

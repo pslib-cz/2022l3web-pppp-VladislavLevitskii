@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/The_Cat.png">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styleforfunction.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Logoipsum | Funkce</title>
+</head>
+<body>
+    <header class="header--flex">
+        <a href="#">
+            <img src="./Images/Logo5.svg" alt="Logo logoipsum" class="logo__image">
+        </a>
+        <a href="#" class="button button--header">
+            <p>Zkušební verze</p>
+        </a>
+    </header>
+    <nav class="navigation">
+        <div class="headernav showMenu">
+            <h2>Menu</h2>
+            <div class="iconheadermenu">
+                <div class="rectangle1menu"></div>
+                <div class="rectangle2menu"></div>
+            </div>
+        </div>
+        <div class="menunavigation">
+            <a href="index.html">Úvod</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Funkce</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Podpora</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Ceník</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Kontakt</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div>
+            <h1>Funkce</h1>
+            <h2>Seznam funkcí aplikace</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam dolorum, aliquid itaque, cum culpa suscipit necessitatibus dolor aperiam obcaecati voluptates ab saepe iure accusamus perferendis quo sed odit corrupti.</p>
+            <h3>Videotutoriály</h3>
+            <a href="#"><img src="./Images/Videotutoriály.svg" alt="Videotutoriály"></a>
+        </div>
+        <footer class="footer">
+            <div class="gridfooter">
+                <div class="block">
+                    <a href="#"><img src="./Images/Logo__footer.svg" alt="Logo" class="mainlogofooter"></a>
+                    <p>Pslib.cz s.r.o</p>
+                    <p>Masarykova 12345</p>
+                    <p>460 00 Liberec</p>
+                    <a href="#" class="linefooterkontakt">
+                        <img src="./Images/telephone.svg" alt="Telephone">
+                        <p>+420 777 666 666</p>
+                    </a>
+                    <a href="#" class="linefooterkontakt">
+                        <img src="./Images/mail.svg" alt="Mail">
+                        <p>info@l3web.cz</p>
+                    </a>
+                    <div class="linefooterkontakt">
+                        <a href="#"><img src="./Images/youtube.svg" alt="Youtube"></a>
+                        <a href="#"><img src="./Images/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="block">
+                    <h3>Videotutoriály</h3>
+                    <a href="#">CSS</a>
+                    <a href="#">Animace</a>
+                    <a href="#">Stříhání videa</a>
+                    <a href="#">Výběr barev</a>
+                    <a href="#">Plánování pracovníků a mezd</a>
+                    <a href="#">Všechna videa</a>
+                </div>
+                <div class="block">
+                    <h3>Podpora</h3>
+                    <a href="#">Přihlášení k účtu</a>
+                    <a href="#">Školení</a>
+                    <a href="#">FAQ - Časté dotazy</a>
+                    <a href="#">Kontakty</a>
+                    <a href="#">Videotutoriály</a>
+                </div>
+                <div class="block">
+                    <h3>Menu</h3>
+                    <a href="index.html">Úvod</a>
+                    <a href="#">Funkce</a>
+                    <a href="#">Podpora</a>
+                    <a href="#">Ceník</a>
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer__footer">
+                <p>© Copyright 2023 - Pslib.cz s.r.o.   |   <a href="#">Cookies</a>    |   <a href="#">Podmínky užití</a></p>
+                <div>
+                    <p>Vyrobilo:</p>
+                    <p class="texthightlight"> B interactive</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+    
+        const headernav = document.querySelector(".headernav");
+        const menunavigation = document.querySelector(".menunavigation");
+        const rectangle1menu = document.querySelector(".rectangle1menu");
+        const rectangle2menu = document.querySelector(".rectangle2menu");
+        const active__main = document.querySelector(".main");
+    
+        function toggleMenu() {
+          if (headernav.classList.contains("showMenu")) {
+            headernav.classList.remove("showMenu")
+            menunavigation.classList.add("active__menunavigation");
+            rectangle1menu.classList.add("active__rectangle1menu");
+            rectangle2menu.classList.add("active__rectangle2menu");
+            active__main.classList.add("active__main");
+            }   else {
+                headernav.classList.add("showMenu")
+                menunavigation.classList.remove("active__menunavigation");
+                rectangle1menu.classList.remove("active__rectangle1menu");
+                rectangle2menu.classList.remove("active__rectangle2menu");
+                active__main.classList.remove("active__main");
+                }
+        }
+    
+        headernav.addEventListener("click", toggleMenu);
+    
+    </script>
+</body>

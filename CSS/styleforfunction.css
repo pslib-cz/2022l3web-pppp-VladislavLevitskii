@@ -1,0 +1,16 @@
+.main > div {
+    padding: .5em;
+}
+
+.main > div > h2 {
+    text-align: left;
+}
+
+.main > div > a {
+    margin: 0 auto;
+}
+
+.main > div > a > img {
+    display: block;
+    margin: 0 auto;
+}
