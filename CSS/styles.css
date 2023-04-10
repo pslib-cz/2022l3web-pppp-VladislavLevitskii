@@ -425,7 +425,8 @@ a:active {
 }
 
 .main > .footer > .gridfooter > .block h3 {
-    margin: 0 0 1em 0;
+    margin: 0;
+    text-align: left;
 }
 
 .main > .footer > .gridfooter > .block > a > .mainlogofooter {
@@ -436,7 +437,7 @@ a:active {
     display: block;
 }
 
-.main > .footer > .gridfooter > .block > .linefooterkontakt {
+.linefooterkontakt {
     display: flex;
     flex-direction: row;
     gap: .5em;

@@ -6,7 +6,7 @@
     --grey: #F5F5F5;
 }
 
-.main > div {
+.main > .main__header {
     padding: .5em;
 }
 
