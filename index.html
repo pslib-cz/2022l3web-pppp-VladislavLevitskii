@@ -100,33 +100,39 @@
         </article>
         <section>
             <h2>Příběh</h2>
-            <img src="./Images/Biba_i_boba.jpg" alt="Biba i boba (creators)">
-            <h3>Jsme dva - Biba a Boba</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, excepturi minus magni quo laborum vitae repellendus unde eius vero, alias adipisci iste deleniti et nisi culpa fuga amet laboriosam officia.</p>
-            <a href="#" class="button">Přečíst celý příběh</a>
+            <div class="pribeh">
+                <img src="./Images/Biba_i_boba.jpg" alt="Biba i boba (creators)">
+                <div class="pribeh__content">
+                    <h3>Jsme dva - Biba a Boba</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, excepturi minus magni quo laborum vitae repellendus unde eius vero, alias adipisci iste deleniti et nisi culpa fuga amet laboriosam officia.</p>
+                    <a href="#" class="button">Přečíst celý příběh</a>
+                </div>
+            </div>
             <h2>Napsali o nás</h2>
             <div class="comments">
-                <img src="./Images/Portrait1.jpg" alt="Portrait1">
-                <div class="comments__flex">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam beatae saepe fugit? Ipsum earum dolore unde iste sunt ad excepturi, ab sed totam, obcaecati soluta vero asperiores, minus repudiandae!</p>
-                    <p class="texthightlight">Michaela Komorousová</p>
-                    <p class="texthightlight">Personalista Magna Exteriors s.r.o.</p>
+                <div class="comments__item">
+                    <img src="./Images/Portrait1.jpg" alt="Portrait1">
+                    <div class="comments__item--flex">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam beatae saepe fugit? Ipsum earum dolore unde iste sunt ad excepturi, ab sed totam, obcaecati soluta vero asperiores, minus repudiandae!</p>
+                        <p class="texthightlight">Michaela Komorousová</p>
+                        <p class="texthightlight">Personalista Magna Exteriors s.r.o.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="comments">
-                <img src="./Images/Portrait2.jpg" alt="Portrait2">
-                <div class="comments__flex">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam beatae saepe fugit? Ipsum earum dolore unde iste sunt ad excepturi, ab sed totam, obcaecati soluta vero asperiores, minus repudiandae!</p>
-                    <p class="texthightlight">Alžběta Formánková</p>
-                    <p class="texthightlight">Personalista Magna Exteriors s.r.o.</p>
+                <div class="comments__item">
+                    <img src="./Images/Portrait2.jpg" alt="Portrait2">
+                    <div class="comments__item--flex">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam beatae saepe fugit? Ipsum earum dolore unde iste sunt ad excepturi, ab sed totam, obcaecati soluta vero asperiores, minus repudiandae!</p>
+                        <p class="texthightlight">Alžběta Formánková</p>
+                        <p class="texthightlight">Personalista Magna Exteriors s.r.o.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="comments">
-                <img src="./Images/Portrait3.jpg" alt="Portrait3">
-                <div class="comments__flex">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam beatae saepe fugit? Ipsum earum dolore unde iste sunt ad excepturi, ab sed totam, obcaecati soluta vero asperiores, minus repudiandae!</p>
-                    <p class="texthightlight">Anna Suchánková</p>
-                    <p class="texthightlight">Personalista Magna Exteriors s.r.o.</p>
+                <div class="comments__item">
+                    <img src="./Images/Portrait3.jpg" alt="Portrait3">
+                    <div class="comments__item--flex">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam beatae saepe fugit? Ipsum earum dolore unde iste sunt ad excepturi, ab sed totam, obcaecati soluta vero asperiores, minus repudiandae!</p>
+                        <p class="texthightlight">Anna Suchánková</p>
+                        <p class="texthightlight">Personalista Magna Exteriors s.r.o.</p>
+                    </div>
                 </div>
             </div>
             <a href="#" class="button">Chci si přečíst víc</a>
@@ -157,56 +163,58 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="gridfooter">
-                <div class="block">
-                    <a href="#"><img src="./Images/Logo__footer.svg" alt="Logo" class="mainlogofooter"></a>
-                    <p>Pslib.cz s.r.o</p>
-                    <p>Masarykova 12345</p>
-                    <p>460 00 Liberec</p>
-                    <a href="#" class="linefooterkontakt">
-                        <img src="./Images/telephone.svg" alt="Telephone">
-                        <p>+420 777 666 666</p>
-                    </a>
-                    <a href="#" class="linefooterkontakt">
-                        <img src="./Images/mail.svg" alt="Mail">
-                        <p>info@l3web.cz</p>
-                    </a>
-                    <div class="linefooterkontakt">
-                        <a href="#"><img src="./Images/youtube.svg" alt="Youtube"></a>
-                        <a href="#"><img src="./Images/linkedin.svg" alt="LinkedIn"></a>
+            <div class="footer-main">
+                <div class="gridfooter">
+                    <div class="block">
+                        <a href="#"><img src="./Images/Logo__footer.svg" alt="Logo" class="mainlogofooter"></a>
+                        <p>Pslib.cz s.r.o</p>
+                        <p>Masarykova 12345</p>
+                        <p>460 00 Liberec</p>
+                        <a href="#" class="linefooterkontakt">
+                            <img src="./Images/telephone.svg" alt="Telephone">
+                            <p>+420 777 666 666</p>
+                        </a>
+                        <a href="#" class="linefooterkontakt">
+                            <img src="./Images/mail.svg" alt="Mail">
+                            <p>info@l3web.cz</p>
+                        </a>
+                        <div class="linefooterkontakt">
+                            <a href="#"><img src="./Images/youtube.svg" alt="Youtube"></a>
+                            <a href="#"><img src="./Images/linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Videotutoriály</h3>
+                        <a href="#">CSS</a>
+                        <a href="#">Animace</a>
+                        <a href="#">Stříhání videa</a>
+                        <a href="#">Výběr barev</a>
+                        <a href="#">Plánování pracovníků a mezd</a>
+                        <a href="#">Všechna videa</a>
+                    </div>
+                    <div class="block">
+                        <h3>Podpora</h3>
+                        <a href="#">Přihlášení k účtu</a>
+                        <a href="#">Školení</a>
+                        <a href="#">FAQ - Časté dotazy</a>
+                        <a href="#">Kontakty</a>
+                        <a href="#">Videotutoriály</a>
+                    </div>
+                    <div class="block">
+                        <h3>Menu</h3>
+                        <a href="#">Úvod</a>
+                        <a href="funkce.html">Funkce</a>
+                        <a href="#">Podpora</a>
+                        <a href="#">Ceník</a>
+                        <a href="kontakt.html">Kontakt</a>
                     </div>
                 </div>
-                <div class="block">
-                    <h3>Videotutoriály</h3>
-                    <a href="#">CSS</a>
-                    <a href="#">Animace</a>
-                    <a href="#">Stříhání videa</a>
-                    <a href="#">Výběr barev</a>
-                    <a href="#">Plánování pracovníků a mezd</a>
-                    <a href="#">Všechna videa</a>
-                </div>
-                <div class="block">
-                    <h3>Podpora</h3>
-                    <a href="#">Přihlášení k účtu</a>
-                    <a href="#">Školení</a>
-                    <a href="#">FAQ - Časté dotazy</a>
-                    <a href="#">Kontakty</a>
-                    <a href="#">Videotutoriály</a>
-                </div>
-                <div class="block">
-                    <h3>Menu</h3>
-                    <a href="#">Úvod</a>
-                    <a href="funkce.html">Funkce</a>
-                    <a href="#">Podpora</a>
-                    <a href="#">Ceník</a>
-                    <a href="kontakt.html">Kontakt</a>
-                </div>
-            </div>
-            <div class="footer__footer">
-                <p>© Copyright 2023 - Pslib.cz s.r.o.   |   <a href="#">Cookies</a>    |   <a href="#">Podmínky užití</a></p>
-                <div>
-                    <p>Vyrobilo:</p>
-                    <p class="texthightlight"> B interactive</p>
+                <div class="footer__footer">
+                    <p>© Copyright 2023 - Pslib.cz s.r.o.   |   <a href="#">Cookies</a>    |   <a href="#">Podmínky užití</a></p>
+                    <div>
+                        <p>Vyrobilo:</p>
+                        <p class="texthightlight"> B interactive</p>
+                    </div>
                 </div>
             </div>
         </footer>
