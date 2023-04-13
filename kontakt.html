@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="la">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./Images/The_Cat.png">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="./CSS/kontakt.css">
+    <link rel="stylesheet" href="./CSS/components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -15,14 +15,34 @@
 </head>
 <body>
     <header class="header--flex">
-        <a href="#">
+        <a href="index.html">
             <img src="./Images/Logo5.svg" alt="Logo logoipsum" class="logo__image">
         </a>
-        <a href="#" class="button button--header">
-            <p>Zkušební verze</p>
-        </a>
+        <div class="desktopvisible">
+            <div class="navdesktop">
+                <a href="index.html">Úvod
+                    <div class="rectangeunderline"></div>
+                </a>
+                <a href="funkce.html">Funkce
+                    <div class="rectangeunderline"></div>
+                </a>
+                <a href="#">Podpora
+                    <div class="rectangeunderline"></div>
+                </a>
+                <a href="#">Ceník
+                    <div class="rectangeunderline"></div>
+                </a>
+                <a href="#">Kontakt
+                    <div class="rectangeunderline"></div>
+                </a>
+                <div class="rectangenav"></div>
+            </div>
+            <a href="#" class="button">
+                <p>Zkušební verze</p>
+            </a>
+        </div>
     </header>
-    <nav class="navigation">
+    <div class="navigation">
         <div class="headernav showMenu">
             <h2>Menu</h2>
             <div class="iconheadermenu">
@@ -37,7 +57,7 @@
             <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Ceník</a>
             <a href="#">Kontakt</a>
         </div>
-    </nav>
+    </div>
     <main class="main">
         <div class="main__header">
             <h2>CEO</h2>
