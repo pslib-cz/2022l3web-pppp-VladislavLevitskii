@@ -23,6 +23,42 @@ h1, h2, h3 {
     color: var(--darkblue);
 }
 
+.headerfordesktop {
+    background-color: var(--grey);
+    display: flex;
+}
+
+.headerfordesktop > .headerfordesktop__content {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: .5em;
+}
+
+.headerfordesktop > .headerfordesktop__content > .headerfordesktop__content--mobileandmail {
+    display: flex;
+    gap: 1em;
+}
+
+.headerfordesktop > .headerfordesktop__content > .headerfordesktop__content--mobileandmail > .headerfordesktop__content--mobileandmail--rectangle {
+    width: 2px;
+    background-color: #D9D9D9;
+    height: 100%;
+}
+
+.headerfordesktop > .headerfordesktop__content a {
+    color: var(--darkblue);
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: .5em;
+}
+
+.headerfordesktop > .headerfordesktop__content a:hover {
+    color: var(--orange);
+}
+
 .header--flex {
     display: flex;
     position: relative;
@@ -211,8 +247,7 @@ a:active {
 .main > header {
     display: flex;
     flex-direction: column;
-    padding: 3em;
-    padding-top: 1em;
+    padding: 1em;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -224,12 +259,12 @@ a:active {
 
 .main > header > .header__content > img {
     box-sizing: border-box;
-    width: 85%;
+    width: 100%;
     border-radius: 1em;
     margin: 0 auto;
 }
 
-.main > header > .header__content > p {
+.main > header > .header__content > .header__content--leftdesktop > p {
     text-align: center;
     color: var(--darkblue);
 }
@@ -242,11 +277,16 @@ a:active {
     font-weight: bold;
 }
 
-.main > header > .header__content > .draft {
+.main > header > .header__content > .header__content--leftdesktop {
+    display: flex;
+    flex-direction: column;
+}
+
+.main > header > .header__content > .header__content--leftdesktop > .draft {
     color: var(--darkblue);
 }
 
-.main > header > .header__content > .draft > li {
+.main > header > .header__content > .header__content--leftdesktop > .draft > li {
     list-style-image: url(../Images/Vector.svg);
     padding: .5em 0;
 }
@@ -406,6 +446,7 @@ a:active {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    align-items: center;
 }
 
 .main > .news > h2 {
@@ -418,6 +459,7 @@ a:active {
     justify-content: space-around;
     gap: .5em;
     height: 8em;
+    max-width: 1100px;
 }
 
 .main > .news > .news__content > .news__content--date {
@@ -446,6 +488,10 @@ a:active {
 .main > .news > .news__content > .news__content--text > a {
     width: fit-content;
     white-space: nowrap;
+}
+
+.main > .news > .news__content > .news__content--text > a:hover {
+    color: var(--darkblue);
 }
 
 .main > .footer {
@@ -484,6 +530,10 @@ a:active {
 .main > .footer > .footer-main > .gridfooter > .block a {
     color: var(--lightblue);
     width: fit-content;
+}
+
+.main > .footer > .footer-main > .gridfooter > .block a:hover {
+    color: var(--orange);
 }
 
 .main > .footer > .footer-main > .gridfooter > .block h3 {
@@ -589,6 +639,8 @@ a:active {
 @media only screen and (min-width: 768px) {
     .main > section > .comments {
         display: flex;
+        max-width: 1100px;
+        margin: 0 auto;
     }
 
     .main > article > .article_1 {
@@ -613,8 +665,37 @@ a:active {
     .header--flex > .desktopvisible > .navdesktop{
         display: none;
     }
+
+    .headerfordesktop {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1281px) {
+    .main > header {
+        max-width: 1100px;
+        padding-top: 4em;
+        gap: 3em;
+    }
 
+    .main > header > .header__content {
+        flex-direction: row-reverse;
+        gap: 2em;
+    }
+
+    .main > header > .header__content > img {
+        width: 60%;
+    }
+
+    .main > header > .header__content > .header__content--leftdesktop > h1 {
+        text-align: left;
+    }
+
+    .main > header > .header__content > .header__content--leftdesktop > p {
+        text-align: left;
+    }
+
+    .main > header > .header__content > .header__content--leftdesktop > .button {
+        margin: 0 auto 0 0;
+    }
 }
