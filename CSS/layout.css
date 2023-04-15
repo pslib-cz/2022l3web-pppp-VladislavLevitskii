@@ -10,11 +10,29 @@
     padding: 0em .5em 2em .5em;
 }
 
-.main > .main__header > h2 {
-    text-align: left;
+.main > .main__header > h1 {
+    margin-bottom: 0;
 }
 
-.main > .main__header > a > img {
+.main > .main__header > .main__header--content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.main > .main__header > .main__header--content > .main__header--content--tutorials1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main > .main__header > .main__header--content > .main__header--content--tutorials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main > .main__header > .main__header--content > .main__header--content--tutorials > a > img {
     display: block;
     margin: 0 auto;
 }
@@ -31,7 +49,28 @@
     background-color: white;
     border-radius: 1em;
     padding: 1em;
+    padding-bottom: 1.5em;
     color: var(--darkblue);
+    position: relative;
+}
+
+.main > .tutotials > a > img {
+    display: none;
+    position: absolute;
+    bottom: -8%;
+    left: 10%;
+}
+
+.main > .tutotials > a > h3 {
+    color: var(--orange);
+}
+
+.main > .tutotials > a:hover > h3 {
+    color: var(--darkblue);
+}
+
+.main > .tutotials > a:hover > img {
+    display: block;
 }
 
 .main > .tutotials > a:link {
@@ -63,4 +102,36 @@
 
 .main > .functionproblem > p {
     text-align: center;
+}
+
+@media only screen and (min-width: 520px) {
+    .main > .tutotials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main > .tutotials {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    .main > .main__header > .main__header--content {
+        flex-direction: row;
+    }
+
+    .main > .main__header > .main__header--content > .main__header--content--tutorials1 > h2 {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main > .tutotials {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1300px;
+        margin: 0 auto;
+        border-radius: 1em;
+        grid-gap: 1.5em;
+    }
 }

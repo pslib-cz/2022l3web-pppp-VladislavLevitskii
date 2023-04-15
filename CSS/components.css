@@ -10,15 +10,67 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 .5em;
 }
 
-.main > .main__header > p {
+.main > .main__header2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 .5em;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 1em;
+}
+
+.main > .main__header2 > .main__header2--content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 .5em;
+}
+
+.main > .main__header2 > .main__header2--content > h2 {
+    margin-bottom: 0;
+}
+
+.main > .main__header > .texthightlight {
     text-align: center;
+    margin: 1em 0;
+}
+
+.main > .main__header2 > .main__header2--content > .texthightlight {
+    text-align: left;
     margin: 1em 0;
 }
 
 .main > .main__header > img {
     width: 50%;
+}
+
+.main > .main__header2 > img {
+    width: 50%;
+}
+
+.main > .main__header > .main__header--content {
+    margin: 1em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.main > .main__header > .main__header--content a {
+    color: var(--darkblue);
+}
+
+.main > .main__header2 > .main__header2--content > .main__header--content {
+    margin: 1em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.main > .main__header2 > .main__header2--content > .main__header--content a {
+    color: var(--darkblue);
 }
 
 .main > .contentkontakt {
@@ -27,6 +79,8 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .main > .contentkontakt > h2 {
@@ -54,7 +108,6 @@
 }
 
 .main > .contentkontakt > .subsidiary > iframe {
-    width: 100%;
     height: 15em;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
@@ -83,4 +136,44 @@
 
 .main > .contentkontakt > .subsidiary > .subsidiary__info > .linefooterkontakt > a:link {
     color: var(--darkblue);
+}
+
+@media only screen and (max-width: 600px) {
+    .main > .main__header2 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main > .main__header {
+        display: none;
+    }
+
+    .main > .main__header2 {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main > .contentkontakt > .subsidiary > iframe {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main > .contentkontakt > .subsidiary {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        background-color: transparent;
+    }
+
+    .main > .contentkontakt > .subsidiary > iframe {
+        border-radius: 1em;
+        max-width: 500px;
+    }
+
+    .main > .contentkontakt > .subsidiary > .subsidiary__info {
+        justify-content: center;
+        align-items: start;
+    }
 }
